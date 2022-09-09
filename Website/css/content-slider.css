@@ -1,0 +1,109 @@
+.slider-boxes {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 310%;
+    height: 400px;
+    transform: translate(-50%, -50%)
+}
+
+.slider {
+    width: 310%;
+    height: 400px;
+    overflow: hidden;
+    transition: all .32s ease;
+}
+
+
+.slide {
+    float: left;
+    width: 33%;
+    height: 400px;
+    font-size: 40px;
+    color: black;
+    padding-top: 160px;
+}
+
+.publish {
+    background: #000000;
+    opacity: 100;
+}
+
+.publish:hover {
+    transform: translate(0%, -1%);
+    opacity: 1;
+    transition: .5s ease;
+    background: #ff9d00;
+    background-image: url(../image/background-8.png);
+    background-size: 100%;
+    color: white;
+}
+
+.newgames {
+    background: #000000;
+    opacity: 100;
+}
+
+.newgames:hover {
+    transform: translate(0%, -1%);
+    opacity: 1;
+    transition: .5s ease;
+    background: #000000;
+    background-image: url(../image/background-9.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.grey {
+    background: #34495e;
+}
+
+.analytics {
+    background: #000000;
+    opacity: 0.8;
+}
+
+.analytics:hover {
+    transform: translate(0%, -1%);
+    opacity: 1;
+    transition: .5s ease;
+    background: #000000;
+    background-image: url(../image/background-6.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.lightgrey {
+    background: #95a5a6;
+}
+
+.sub-title {
+    font-size: 40%;
+}
+
+.navigator {
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.navigator li {
+    float: left;
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    padding: 7px 12px;
+    margin: 0 13px;
+    cursor: pointer;
+    box-shadow: 0 3px 17px rgba(0, 0, 0, .3);
+    transition: all .32s ease;
+    position: center;
+}
+
+.navigator li:hover {
+    transform: translateY(-2px);
+}

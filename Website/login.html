@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href=".\css\home.css">
+    <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+    <link rel="stylesheet" type="text/css" href=".\css\login.css">
+</head>
+
+<body onload="myFunction()">
+    <script src=".\js\loader.js"></script>
+
+    <!--Pre-launched loader-->
+    <div id="loader"></div>
+
+    <!--Side box where all the option will be poping up-->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="newgames.html">new games</a>
+        <a href="publish.html">Publish</a>
+        <a href="Analytics.html">Analytics</a>
+        <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
+    </div>
+    <script src=".\js\sidebar.js"></script>
+
+     <!--Main html pag-->
+    <div id="main" class="animate-bottom">
+        <!--Tile of the website-->
+        
+        <div class="header">
+            GAME DEVS HUB
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
+        </div>
+        <hr>
+        <div id="login-title-header">
+            <h3 id="login-title"> Enter the details to login</h3>
+        </div>
+        <!--Login page where details are asked and a submit button-->
+        <div id="login">
+            <form id="validated-form" onclick="validateForm()" method="post">
+                <div>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username" required>
+                        <br>
+                        <span class="text-danger" v-if="validationErrors.username" style="width: 100%;" v-text="validationErrors.username"></span>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" v-model="password" placeholder="Password" id="password" class="form-control" required/>
+                        <br>
+                        <span class="text-danger" v-if="validationErrors.password" style="width: 100%;" v-text="validationErrors.password"></span>
+                    </div>
+                </div>
+                <br>
+                <input type="button" value="Submit" @click.prevent="submitForm()">
+            </form>
+        </div>
+    
+        <!--end-->
+        <div class="footer">
+            &#169 Deakin University.<br>Paridh Rathod
+        </div>
+    </div>
+
+</body>
+
+</html>

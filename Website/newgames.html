@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> New games </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href=".\css\home.css">
+    <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+    
+</head>
+
+<body onload="myFunction()">
+    <script src=".\js\loader.js"></script>
+
+    <!--Pre-launched loader-->
+    <div id="loader"></div>
+
+    <!--Side box where all the option will be poping up-->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="newgames.html">new games</a>
+        <a href="publish.html">Publish</a>
+        <a href="Analytics.html">Analytics</a>
+        <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
+    </div>
+    <script src=".\js\sidebar.js"></script>
+
+     <!--Main html page-->
+    <div id="main" class="animate-main">
+        <!--Tile of the website-->
+        <div class="header">
+            GAME DEVS HUB
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
+        </div>
+        <hr>
+        <div class="content">
+            <!--box with option that would redirt to differnt pages-->
+            <p> New games page</p>
+            <div id="slider">
+                <div class="slider-boxes">
+                    <ul class="slider" :style="styleObject">
+                        <a href="newgames.html">
+                            <li class="blue slide">New games
+                                <br><br>
+                                <p class="sub-title">Check out what is new on the site :::</p>
+                            </li>
+                        </a>
+                        <a href="publish.html">
+                            <li class="green slide">Publish <br><br>
+                                <p class="sub-title">Made you own game , Share with other peopl here !</p>
+                            </li>
+                        </a>
+                        <a href="Analytics.html">
+                            <li class="red slide">Analytics
+                                <br><br>
+                                <p class="sub-title">Want to see how much have you game reached out.</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src=".\js\content-slider.js"></script>
+
+        <!--end-->
+        <div class="footer">
+            &#169 Deakin University.<br>Paridh Rathod
+        </div>
+    </div>
+
+</body>
+
+</html>

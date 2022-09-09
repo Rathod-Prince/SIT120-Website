@@ -1,0 +1,28 @@
+#login {
+    width: 500px;
+    border: 1px solid #CCCCCC;
+    background-color: rgb(0, 67, 39);
+    color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+h3#login-title {
+    text-align: center;
+}
+
+#login-title-header {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pic {
+    transition: transform .2s;
+    padding: 1%;
+    width: 30%;
+    height: 400px;
+}
+
+.pic:hover {
+    transform: scale(1.05);
+}
