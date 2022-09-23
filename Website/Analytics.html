@@ -6,22 +6,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href=".\css\chart.css">
     <link rel="stylesheet" type="text/css" href=".\css\home.css">
     <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-<body onload="myFunction()">
-    <script src=".\js\loader.js"></script>
+<body>
 
-    <!--Pre-launched loader-->
-    <div id="loader"></div>
 
     <!--Side box where all the option will be poping up-->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
-        <a href="newgames.html">new games</a>
-        <a href="publish.html">Publish</a>
+        <a href="newgames.html">New Games</a>
+        <a href="newblogs.html">New Blogs</a>
+        <a href="newtutorials.html">New Tutorials</a>
+        <a href="publishgames.html">Publish Games</a>
+        <a href="publishblogs.html">Publish Blogs</a>
+        <a href="publishtutorials.html">Publish Tutorials</a>
         <a href="Analytics.html">Analytics</a>
         <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
     </div>
@@ -36,34 +40,14 @@
             <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
         </div>
         <hr>
-        <div class="content">
-            <p>Analytics Page</p>
-            <!--box with option that would redirt to differnt pages-->
-            <div id="slider">
-                <div class="slider-boxes">
-                    <ul class="slider" :style="styleObject">
-                        <a href="newgames.html">
-                            <li class="blue slide">New games
-                                <br><br>
-                                <p class="sub-title">Check out what is new on the site :::</p>
-                            </li>
-                        </a>
-                        <a href="publish.html">
-                            <li class="green slide">Publish <br><br>
-                                <p class="sub-title">Made you own game , Share with other peopl here !</p>
-                            </li>
-                        </a>
-                        <a href="Analytics.html">
-                            <li class="red slide">Analytics
-                                <br><br>
-                                <p class="sub-title">Want to see how much have you game reached out.</p>
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <script src=".\js\content-slider.js"></script>
+
+        <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+        <script src="./js/chart.js"></script>
+          
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
 
         <!--end-->
         <div class="footer">

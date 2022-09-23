@@ -1,0 +1,78 @@
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    background: rgb(87, 87, 87);
+    padding: 25px 30px;
+    border-radius: 8px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: rgb(0, 0, 0);
+
+}
+
+.container form .blogdetails{
+    margin: 20px 0 12px 0;
+}
+
+form .blogdetails .inputbox{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.blogdetails .inputbox .details{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.blogdetails .inputbox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.genre .details{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.genre input{
+    height: 20px;
+}
+
+.genre label{
+    color: black;
+    font-size: large;
+}
+
+.button{
+    margin-left: 300px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

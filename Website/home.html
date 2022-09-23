@@ -8,20 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href=".\css\home.css">
     <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+    <link rel="stylesheet" type="text/css" href=".\css\newgamesscoller.css">
 </head>
 
-<body onload="myFunction()">
-    <script src=".\js\loader.js"></script>
-
-    <!--Pre-launched loader-->
-    <div id="loader"></div>
+<body>
+   
 
     <!--Side box where all the option will be poping up-->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
-        <a href="newgames.html">new games</a>
-        <a href="publish.html">Publish</a>
+        <a href="newgames.html">New Games</a>
+        <a href="newblogs.html">New Blogs</a>
+        <a href="newtutorials.html">New Tutorials</a>
+        <a href="publishgames.html">Publish Games</a>
+        <a href="publishblogs.html">Publish Blogs</a>
+        <a href="publishtutorials.html">Publish Tutorials</a>
         <a href="Analytics.html">Analytics</a>
         <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
     </div>
@@ -35,42 +37,66 @@
             <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
             <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
         </div>
-        <hr>
+        <hr width="80%"  style="background-color: rgb(102, 102, 102); height: 2px;">
         <div class="content">
-            <p>HOME</p>
-            <!--box with option that would redirt to differnt pages-->
-            <div id="slider">
-                <div class="slider-boxes">
-                    <ul class="slider" :style="styleObject">
-                        <a href="newgames.html">
-                            <li class="blue slide">New games
-                                <br><br>
-                                <p class="sub-title">Check out what is new on the site :::</p>
-                            </li>
-                        </a>
-                        <a href="publish.html">
-                            <li class="green slide">Publish <br><br>
-                                <p class="sub-title">Made you own game , Share with other peopl here !</p>
-                            </li>
-                        </a>
-                        <a href="Analytics.html">
-                            <li class="red slide">Analytics
-                                <br><br>
-                                <p class="sub-title">Want to see how much have you game reached out.</p>
-                            </li>
-                        </a>
-                    </ul>
+            <h2>New Games</h2>
+            <!--contanor for scolling new games-->
+            <div class="newgamesscoller">
+                <div class="images">
+                    <a href="newgames.html"><img src="image/games 1.png" alt="new games"></a>
+                    <a href="newgames.html"><img src="image/games 2.png" alt="new games"></a>
+                    <a href="newgames.html"><img src="image/games 3.png" alt="new games"></a>
+                    <a href="newgames.html"><img src="image/games 5.png" alt="new games"></a>
                 </div>
             </div>
-        </div>
-        <script src=".\js\content-slider.js"></script>
+            
+            <hr width="80%"  style="background-color: black; height: 2px;">
+            
+            <h2>New Blogs</h2>
+            <!--contanor for scolling new blogs-->
+            <div class="newgamesscoller">
+                <div class="images">
+                    <a href="newblogs.html"><img src="image/Blogs 1.png" alt="new Blogs"></a>
+                    <a href="newblogs.html"><img src="image/Blogs 2.png" alt="new Blogs"></a>
+                    <a href="newblogs.html"><img src="image/Blogs 3.png" alt="new Blogs"></a>
+                    <a href="newblogs.html"><img src="image/Blogs 4.png" alt="new Blogs"></a>
+                </div>
+            </div>
+            <hr width="80%"  style="background-color: black; height: 2px;">
+            <h2>New tutorials</h2>
+            <!--contanor for scolling new tutorials-->
+            <div class="newgamesscoller">
+                <div class="images">
+                    <a href="newtutorials.html"><img src="image/games 1.png" alt="new tutorials"></a>
+                    <a href="newtutorials.html"><img src="image/Blogs 5.png" alt="new tutorials"></a>
+                    <a href="newtutorials.html"><img src="image/games 4.png" alt="new tutorials"></a>
+                    <a href="newtutorials.html"><img src="image/Blogs 3.png" alt="new tutorials"></a>
+                </div>
+            </div>
 
+            <hr width="80%"  style="background-color: black; height: 2px;">
+
+            <h2>Publish Stuff</h2>
+            <!--contanor for scolling Publish stuff-->
+            <div class="newgamesscoller">
+                <div class="images">
+                    <a href="publishgames.html"><img src="image/Publish G.png" alt="Publish games"></a>
+                    <a href="publishblogs.html"><img src="image/Publish B.png" alt="Publish Blogs"></a>
+                    <a href="publishtutorials.html"><img src="image/Publish T.png" alt="Publish Tutorials"></a>
+                </div>
+            </div>
+
+
+            <!--This is the hoizontal line for good looks-->
+            <hr width="80%"  style="background-color: black; height: 2px;">
+            
+            &nbsp;
+            &nbsp;
+            &nbsp;
         <!--end-->
         <div class="footer">
             &#169 Deakin University.<br>Paridh Rathod
         </div>
     </div>
-
 </body>
-
 </html>

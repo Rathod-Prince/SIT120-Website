@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Publish  Blogs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href=".\css\home.css">
+    <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
+    <link rel="stylesheet" type="text/css" href=".\css\publishblogs.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body >
+
+    <!--Side box where all the option will be poping up-->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="newgames.html">New Games</a>
+        <a href="newblogs.html">New Blogs</a>
+        <a href="newtutorials.html">New Tutorials</a>
+        <a href="publishgames.html">Publish Games</a>
+        <a href="publishblogs.html">Publish Blogs</a>
+        <a href="publishtutorials.html">Publish Tutorials</a>
+        <a href="Analytics.html">Analytics</a>
+        <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
+    </div>
+    <script src=".\js\sidebar.js"></script>
+
+    <!--Main html pag-->
+    <div id="main" class="animate-main">
+        
+        <!--Tile of the website-->
+        <div class="header">
+            GAME DEVS HUB
+            <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
+            <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
+        </div>
+        <hr style="background-color: rgb(102, 102, 102); height: 2px;">
+        
+        <!--This container includs the entire form inputs-->
+        <div class="container">
+            <div class="title"> Publish Blogs</div>
+            <form id="validations" onclick="validateForm()" method="post">
+                <div class="blogdetails">
+                    <div class="inputbox">
+                        <span class="details"> Title of the blog</span>
+                        <input type="text" name="title" placeholder="Enter the title.." required>
+                        <span class="text-danger" v-if="validationErrors.title" style="width: 100%;" v-text="validationErrors.title"></span>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details"> Description</span>
+                        <textarea name="Description" cols="30" rows="10" required></textarea>
+                        <span class="text-danger" v-if="validationErrors.Description" style="width: 100%;" v-text="validationErrors.Description"></span>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <span class="details"> Image</span>
+                        <input name="img" type="file" @change="onfile" required>
+                        <span class="text-danger" v-if="validationErrors.img" style="width: 100%;" v-text="validationErrors.img"></span>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details"> Date of documentations</span>
+                        <input name="date" type="date" min="2022-01-01" required>
+                        <span class="text-danger" v-if="validationErrors.date" style="width: 100%;" v-text="validationErrors.date"></span>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details"> Document</span>
+                        <input name="doc" type="file" @change="onfile" required>
+                        <span class="text-danger" v-if="validationErrors.doc" style="width: 100%;" v-text="validationErrors.doc"></span>
+                    </div>
+                </div>
+                <div class="genre">
+                    <span class="details"> Genre</span><br>
+                    <input type="radio" id="News" name="genre">
+                    <label for="News" >News</label><br>
+                    <input type="radio" id="GU" name="genre">
+                    <label for="GU">Games Update</label><br>
+                    <input type="radio" id="Devblog" name="genre">
+                    <label for="Dev blog">Developer Blog</label>
+                </div>
+
+                <!--The submit button-->
+                <div class="button">
+                    <input type="Submit" Value="Publish It" @click.prevent="submitForm()">
+                </div>
+            </form>
+        </div>
+        <script src="./js/validations.js"></script>
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        <!--end-->
+        <div class="footer">
+            &#169 Deakin University.<br>Paridh Rathod
+        </div>
+    </div>
+
+</body>
+
+</html>

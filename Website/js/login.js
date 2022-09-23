@@ -1,4 +1,4 @@
-const vueApp = new Vue({
+var app = new Vue({
     el: '#validated-form',
     data: function() {
         return {

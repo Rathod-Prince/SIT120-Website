@@ -1,0 +1,27 @@
+.newgamesscoller{
+    padding: 10px;
+    max-width: 95vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.images{
+    display: flex;
+    gap:20px;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden; 
+
+    transition: ease-in-out;
+}
+
+.images img{
+    scroll-snap-align: start;
+    height: 270px;
+    width: 480px;
+    overflow-y: hidden; 
+
+}
+.images img:hover {
+    transform: scale(1.05);
+}

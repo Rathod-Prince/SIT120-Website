@@ -2,27 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>login</title>
+    <title>Login</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" type="text/css" href=".\css\home.css">
     <link rel="stylesheet" type="text/css" href=".\css\sidebar.css">
     <link rel="stylesheet" type="text/css" href=".\css\login.css">
 </head>
 
-<body onload="myFunction()">
-    <script src=".\js\loader.js"></script>
-
-    <!--Pre-launched loader-->
-    <div id="loader"></div>
+<body>
 
     <!--Side box where all the option will be poping up-->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
-        <a href="newgames.html">new games</a>
-        <a href="publish.html">Publish</a>
+        <a href="newgames.html">New Games</a>
+        <a href="newblogs.html">New Blogs</a>
+        <a href="newtutorials.html">New Tutorials</a>
+        <a href="publishgames.html">Publish Games</a>
+        <a href="publishblogs.html">Publish Blogs</a>
+        <a href="publishtutorials.html">Publish Tutorials</a>
         <a href="Analytics.html">Analytics</a>
         <a href="login.html"><img id="loginlogo" src=".\image\loginlogo.png"></a>
     </div>
@@ -37,10 +38,12 @@
             <button class="openbtn" onclick="openNav()" class="alignleft">&#9776; MENU</button>
             <a href="login.html"><img id="loginlogo2" src=".\image\loginlogo.png" class="alignright pic"> </a>
         </div>
-        <hr>
+        <hr style="background-color: rgb(102, 102, 102); height: 2px;">
         <div id="login-title-header">
             <h3 id="login-title"> Enter the details to login</h3>
         </div>
+
+        
         <!--Login page where details are asked and a submit button-->
         <div id="login">
             <form id="validated-form" onclick="validateForm()" method="post">
@@ -65,7 +68,12 @@
                 <input type="button" value="Submit" @click.prevent="submitForm()">
             </form>
         </div>
+        <script src=".\js\login.js"></script>
     
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
         <!--end-->
         <div class="footer">
             &#169 Deakin University.<br>Paridh Rathod

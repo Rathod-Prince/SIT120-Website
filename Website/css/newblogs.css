@@ -1,0 +1,10 @@
+#gameslist img{
+    scroll-snap-align: start;
+    height: 135px;
+    width: 240px;
+    overflow-y: hidden; 
+
+}
+#gameslist img:hover {
+    transform: scale(1.05);
+}
